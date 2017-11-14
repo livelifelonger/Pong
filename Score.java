@@ -16,7 +16,7 @@ public class Score extends Actor
     public Score( boolean left )
     {
         playerScore = 0;
-        isLeft = true;
+        isLeft = left;
         
         displayScore();
     }
@@ -27,13 +27,13 @@ public class Score extends Actor
         
         if ( isLeft == true)
         {
-            display = new GreenfootImage( Integer.toString( playerScore ), 30, (Color.BLUE), Color.BLACK );
+            display = new GreenfootImage( Integer.toString( playerScore ), 30, (Color.RED), Color.BLACK );
             setImage (display);
             scoreChanged = false;
         }
         else
         {
-            display = new GreenfootImage( Integer.toString( playerScore ), 30, (Color.RED), Color.BLACK );
+            display = new GreenfootImage( Integer.toString( playerScore ), 30, (Color.BLUE), Color.BLACK );
             setImage (display);
             scoreChanged = false;
         }
