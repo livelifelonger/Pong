@@ -108,7 +108,7 @@ public class PlayField extends World
     public void reset()
     {
         theBall.setLocation( getWidth()/2, getHeight()/2);
-        
+        theBall.turn(Greenfoot.getRandomNumber( 360 ));
         showText ( "press Space to Start", 200 , 550 );
         startGame = false;
     }

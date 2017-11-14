@@ -18,7 +18,7 @@ public class Ball extends Actor
         ballImage.setColor(Color.WHITE);
         ballImage.fillOval( 0 , 0, SIZE, SIZE );
         setImage (ballImage);
-        turn(Greenfoot.getRandomNumber( 0 + 360 ));
+        turn(Greenfoot.getRandomNumber( 360 ));
     }
     
     /**

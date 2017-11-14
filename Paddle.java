@@ -19,8 +19,6 @@ public class Paddle extends Actor
     {
         GreenfootImage Paddle = new GreenfootImage( WIDTH, HEIGHT );
         
-        
-        
         if( isLeft == true )
         {
             upKey   = "w";
